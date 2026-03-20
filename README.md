@@ -219,7 +219,7 @@ Authorization: Bearer YOUR_TOKEN
 ### Steps
 
 ```bash id="run1"
-git clone https://github.com/your-username/food-ordering-backend-api.git
+git clone https://github.com/takundagorodo/food-ordering-backend-api.git
 cd food-ordering-backend-api
 npm install
 npm start
@@ -231,10 +231,12 @@ npm start
 
 Create `.env` file:
 
-```env id="env1"
-PORT=5000
-MONGO_URI=your_mongodb_connection
-JWT_SECRET=your_secret_key
+```
+MONGO_URL = mongodb://localhost:27017/restaurant
+PORT =3000
+SECRET_KEY = my_secret_key_is_very_secure
+HASH_KEY = 10
+
 ```
 
 ---
