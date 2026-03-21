@@ -10,8 +10,8 @@ const router = express.Router();
 
 router.use('/auth/',authRoutes);
 router.use('/user/',userRoutes);
-router.use('/restaurant/',restaurantRoutes);
-router.use('/category/',categoryRoutes);
+router.use('/restaurants/',restaurantRoutes);
+router.use('/categories/',categoryRoutes);
 router.use('/foods/',foodRoutes);
 router.use('/orders/,foodRoutes);
 
