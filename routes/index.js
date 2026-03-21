@@ -13,6 +13,7 @@ router.use('/user/',userRoutes);
 router.use('/restaurant/',restaurantRoutes);
 router.use('/category/',categoryRoutes);
 router.use('/foods/',foodRoutes);
+router.use('/orders/,foodRoutes);
 
 
 export default router;
