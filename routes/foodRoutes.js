@@ -6,13 +6,13 @@ import { admin } from "../middlewares/adminMiddleware.js";
 
 const router = express.Router();
 
-router.post('/create',protect ,createFoodController);
-router.delete('/delete/:id',protect,deleteFoodController);
-router.put('/update/:id',protect,updateFoodController);
-router.get('/all',getAllFoodController);
-router.get('/one/:id',protect,getFoodController);
-router.post('/placeorder',protect,placeOrderController);
-router.delete('/cancel/:id',protect,cancelOrderController);
-router.put('/orderStatus/:id',admin,orderStatusController);
+router.post('/',protect ,createFoodController);
+router.delete('/:id',protect,deleteFoodController);
+router.put('/:id',protect,updateFoodController);
+router.get('/',getAllFoodController);
+router.get('/:id',protect,getFoodController);
+router.post('/',protect,placeOrderController);
+router.delete('/:id',protect,cancelOrderController);
+router.put('/:id',admin,orderStatusController);
 
 export default router;
