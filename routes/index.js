@@ -3,7 +3,8 @@ import categoryRoutes from "./categoryRoutes.js"
 import restaurantRoutes from "./restaurantRoutes.js";
 import  authRoutes from "./authRoutes.js";
 import userRoutes from "./userRoutes.js";
-import foodRoutes from "./foodRoutes.js"
+import foodRoutes from "./foodRoutes.js";
+import orderRoutes from "./orderRoutes.js"
 
 const router = express.Router();
 
@@ -13,7 +14,7 @@ router.use('/user/',userRoutes);
 router.use('/restaurants/',restaurantRoutes);
 router.use('/categories/',categoryRoutes);
 router.use('/foods/',foodRoutes);
-router.use('/orders/,foodRoutes);
+router.use('/orders/,orderRoutes);
 
 
 export default router;
