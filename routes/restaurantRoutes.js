@@ -4,9 +4,9 @@ import { createRestaurantController ,deleteRestaurantByIdControler , getAllResta
 
 const router = express.Router();
 
-router.post('/createRestaurant',protect, createRestaurantController);
-router.get('/getAllRestaurant',getAllRestaurantController);
-router.get('/getRestaurant/:id',getRestaurantByIdController);
-router.delete('/deleteRestaurant',protect,deleteRestaurantByIdControler);
+router.post('/',protect, createRestaurantController);
+router.get('/',getAllRestaurantController);
+router.get('/:id',getRestaurantByIdController);
+router.delete('/:id',protect,deleteRestaurantByIdControler);
 
 export default router;
